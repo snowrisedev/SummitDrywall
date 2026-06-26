@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560" font-family="'Courier New', monospace">
+  <defs>
+    <linearGradient id="bp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16386c"/>
+      <stop offset="1" stop-color="#0e2a55"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="560" fill="url(#bp)"/>
+
+  <!-- Faint blueprint grid -->
+  <g stroke="#9fc0ff" stroke-width="0.5" opacity="0.10">
+    <line x1="40" y1="0" x2="40" y2="560"/><line x1="80" y1="0" x2="80" y2="560"/>
+    <line x1="120" y1="0" x2="120" y2="560"/><line x1="160" y1="0" x2="160" y2="560"/>
+    <line x1="200" y1="0" x2="200" y2="560"/><line x1="240" y1="0" x2="240" y2="560"/>
+    <line x1="280" y1="0" x2="280" y2="560"/><line x1="320" y1="0" x2="320" y2="560"/>
+    <line x1="360" y1="0" x2="360" y2="560"/><line x1="400" y1="0" x2="400" y2="560"/>
+    <line x1="440" y1="0" x2="440" y2="560"/><line x1="480" y1="0" x2="480" y2="560"/>
+    <line x1="520" y1="0" x2="520" y2="560"/><line x1="560" y1="0" x2="560" y2="560"/>
+    <line x1="0" y1="40" x2="600" y2="40"/><line x1="0" y1="80" x2="600" y2="80"/>
+    <line x1="0" y1="120" x2="600" y2="120"/><line x1="0" y1="160" x2="600" y2="160"/>
+    <line x1="0" y1="200" x2="600" y2="200"/><line x1="0" y1="240" x2="600" y2="240"/>
+    <line x1="0" y1="280" x2="600" y2="280"/><line x1="0" y1="320" x2="600" y2="320"/>
+    <line x1="0" y1="360" x2="600" y2="360"/><line x1="0" y1="400" x2="600" y2="400"/>
+    <line x1="0" y1="440" x2="600" y2="440"/><line x1="0" y1="480" x2="600" y2="480"/>
+    <line x1="0" y1="520" x2="600" y2="520"/>
+  </g>
+
+  <!-- Sheet border -->
+  <rect x="18" y="18" width="564" height="524" fill="none" stroke="#cfe0ff" stroke-width="1.5" opacity="0.55"/>
+  <rect x="24" y="24" width="552" height="512" fill="none" stroke="#cfe0ff" stroke-width="0.75" opacity="0.35"/>
+
+  <!-- Title -->
+  <text x="40" y="52" fill="#cfe0ff" font-size="17" font-weight="700" letter-spacing="1.5">TYPICAL INTERIOR PARTITION</text>
+  <text x="40" y="70" fill="#c9a84c" font-size="10" letter-spacing="3">FRAMING &#183; DRYWALL &#183; FINISH</text>
+
+  <!-- ===== ELEVATION (left) ===== -->
+  <g stroke="#dce8ff" stroke-width="1.4">
+    <!-- double top plate -->
+    <rect x="74" y="104" width="252" height="9" fill="#cfe0ff" fill-opacity="0.16"/>
+    <rect x="74" y="114" width="252" height="9" fill="#cfe0ff" fill-opacity="0.16"/>
+    <!-- bottom (sole) plate -->
+    <rect x="74" y="420" width="252" height="14" fill="#cfe0ff" fill-opacity="0.16"/>
+    <!-- studs @ 16" o.c. -->
+    <rect x="86"  y="123" width="6" height="297" fill="#cfe0ff" fill-opacity="0.13"/>
+    <rect x="126" y="123" width="6" height="297" fill="#cfe0ff" fill-opacity="0.13"/>
+    <rect x="166" y="123" width="6" height="297" fill="#cfe0ff" fill-opacity="0.13"/>
+    <rect x="206" y="123" width="6" height="297" fill="#cfe0ff" fill-opacity="0.13"/>
+    <rect x="246" y="123" width="6" height="297" fill="#cfe0ff" fill-opacity="0.13"/>
+    <rect x="286" y="123" width="6" height="297" fill="#cfe0ff" fill-opacity="0.13"/>
+    <rect x="320" y="123" width="6" height="297" fill="#cfe0ff" fill-opacity="0.13"/>
+  </g>
+
+  <!-- o.c. dimension (top) -->
+  <g stroke="#c9a84c" stroke-width="1">
+    <line x1="89" y1="92" x2="129" y2="92"/>
+    <line x1="89" y1="87" x2="89" y2="97"/>
+    <line x1="129" y1="87" x2="129" y2="97"/>
+  </g>
+  <text x="109" y="84" fill="#c9a84c" font-size="9" text-anchor="middle">16&quot; O.C.</text>
+
+  <!-- wall height dimension (left) -->
+  <g stroke="#c9a84c" stroke-width="1">
+    <line x1="54" y1="108" x2="54" y2="430"/>
+    <line x1="49" y1="108" x2="59" y2="108"/>
+    <line x1="49" y1="430" x2="59" y2="430"/>
+  </g>
+  <text x="44" y="272" fill="#c9a84c" font-size="9" text-anchor="middle" transform="rotate(-90 44 272)">WALL HEIGHT</text>
+
+  <!-- elevation caption -->
+  <text x="200" y="456" fill="#cfe0ff" font-size="10" text-anchor="middle" letter-spacing="1">ELEVATION &#8212; STUD LAYOUT</text>
+
+  <!-- ===== PLAN / SECTION DETAIL (right) ===== -->
+  <text x="468" y="150" fill="#cfe0ff" font-size="11" text-anchor="middle" letter-spacing="1">SECTION A&#8211;A</text>
+
+  <g stroke="#dce8ff" stroke-width="1.4">
+    <!-- gypsum board, face 1 -->
+    <rect x="430" y="182" width="11" height="150" fill="#cfe0ff" fill-opacity="0.20"/>
+    <!-- gypsum board, face 2 -->
+    <rect x="495" y="182" width="11" height="150" fill="#cfe0ff" fill-opacity="0.20"/>
+    <!-- metal C-stud between -->
+    <path d="M 482 182 L 454 182 L 454 332 L 482 332" fill="none" stroke-width="2"/>
+    <line x1="468" y1="182" x2="468" y2="332" stroke-dasharray="4 4" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- detail labels -->
+  <g stroke="#c9a84c" stroke-width="0.8">
+    <line x1="435" y1="182" x2="435" y2="166"/>
+    <line x1="468" y1="332" x2="468" y2="350"/>
+  </g>
+  <text x="435" y="160" fill="#c9a84c" font-size="9" text-anchor="middle">5/8&quot; GYP. BD.</text>
+  <text x="468" y="364" fill="#c9a84c" font-size="9" text-anchor="middle">3-5/8&quot; METAL STUD</text>
+
+  <!-- ===== TITLE BLOCK (bottom-right) ===== -->
+  <g stroke="#cfe0ff" stroke-width="1" opacity="0.7">
+    <rect x="360" y="452" width="216" height="74" fill="none"/>
+    <line x1="360" y1="478" x2="576" y2="478"/>
+    <line x1="360" y1="502" x2="576" y2="502"/>
+  </g>
+  <text x="370" y="471" fill="#c9a84c" font-size="13" font-weight="700" letter-spacing="2">SUMMIT DRYWALL</text>
+  <text x="370" y="495" fill="#cfe0ff" font-size="9" letter-spacing="1">WALL TYPE 1 &#183; PARTITION</text>
+  <text x="370" y="519" fill="#cfe0ff" font-size="9" letter-spacing="1">SCALE: N.T.S. &#183; SHEET A-1</text>
+</svg>
