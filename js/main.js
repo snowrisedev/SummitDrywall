@@ -39,9 +39,10 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
-// Contact form — placeholder success state (swap for real backend/Formspree later)
+// Contact form — submits to the endpoint in the form's `action` (Formspree), then
+// shows the in-page success state. Falls back to an error state if the send fails.
 const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const btn = contactForm.querySelector('button[type="submit"]');
@@ -60,16 +61,34 @@ contactForm.addEventListener('submit', (e) => {
   });
   if (!valid) return;
 
-  btn.textContent = 'Message Sent!';
+  btn.textContent = 'Sending…';
   btn.disabled = true;
-  btn.style.cssText = 'background:#2ecc71;border-color:#2ecc71;color:#fff;';
 
-  setTimeout(() => {
-    btn.textContent = original;
-    btn.disabled = false;
-    btn.style.cssText = '';
-    contactForm.reset();
-  }, 4000);
+  try {
+    const res = await fetch(contactForm.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(contactForm),
+    });
+    if (!res.ok) throw new Error('Submission failed');
+
+    btn.textContent = 'Message Sent!';
+    btn.style.cssText = 'background:#2ecc71;border-color:#2ecc71;color:#fff;';
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.disabled = false;
+      btn.style.cssText = '';
+      contactForm.reset();
+    }, 4000);
+  } catch (err) {
+    btn.textContent = 'Something went wrong — try again';
+    btn.style.cssText = 'background:#e74c3c;border-color:#e74c3c;color:#fff;';
+    setTimeout(() => {
+      btn.textContent = original;
+      btn.disabled = false;
+      btn.style.cssText = '';
+    }, 4000);
+  }
 });
 
 // Completed Projects carousel — advances one page (a 2x2 grid of 4) at a time
