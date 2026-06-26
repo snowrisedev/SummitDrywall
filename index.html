@@ -29,16 +29,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css?v=14">
+  <link rel="stylesheet" href="css/styles.css?v=20">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Summit Drywall",
-    "description": "Licensed and insured commercial drywall subcontractor specializing in drywall hanging, mudding and taping, repairs and patching, acoustic ceilings, and steel framing for large-scale commercial projects.",
+    "name": "Summit Drywall, Inc",
+    "description": "Licensed and insured commercial drywall subcontractor specializing in drywall hanging, mudding and taping, acoustic ceilings, and steel framing for mid-scale commercial projects.",
     "url": "https://summitdrywall.com",
-    "telephone": "+1-801-555-0100",
+    "telephone": "+1-504-473-9500",
     "email": "info@summitdrywall.com",
     "address": {
       "@type": "PostalAddress",
@@ -57,7 +57,6 @@
     "knowsAbout": [
       "Drywall Hanging",
       "Mudding and Taping",
-      "Repairs and Patching",
       "Acoustic Ceilings",
       "Steel Framing",
       "Commercial Drywall",
@@ -75,7 +74,7 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Summit Drywall",
+    "name": "Summit Drywall, Inc",
     "url": "https://summitdrywall.com/"
   }
   </script>
@@ -114,7 +113,7 @@
         "name": "What drywall services does Summit Drywall offer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We provide drywall hanging, mudding and taping, repairs and patching, acoustic ceilings, and light-gauge steel framing."
+          "text": "We provide drywall hanging, mudding and taping, acoustic ceilings, and light-gauge steel framing."
         }
       },
       {
@@ -165,7 +164,7 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-eyebrow">Licensed &amp; Insured &nbsp;·&nbsp; Utah</p>
-      <h1>Summit Drywall</h1>
+      <h1>Summit Drywall, Inc</h1>
       <p class="hero-sub">The subcontractor of choice for mid-scale commercial drywall projects. On schedule. On spec. Every time.</p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary">Contact Us</a>
@@ -184,7 +183,7 @@
         <div class="about-text">
           <span class="section-label">Who We Are</span>
           <h2>Built on Quality.<br>Driven by Craft.</h2>
-          <p>Summit Drywall is a licensed and insured commercial drywall subcontractor serving general contractors across Utah. We specialize in large-scale commercial builds — from ground-up construction to tenant improvements — delivering clean finishes, tight schedules, and the professionalism that keeps us at the top of every GC's call list.</p>
+          <p>Summit Drywall is a licensed and insured commercial drywall subcontractor serving general contractors across Utah. We specialize in mid-scale commercial builds — from ground-up construction to tenant improvements — delivering clean finishes, tight schedules, and the professionalism that keeps us at the top of every GC's call list.</p>
           <p>When the job has to be done right, Summit is the call.</p>
           <div class="about-badges">
             <div class="badge">
@@ -215,6 +214,7 @@
       <div class="trusted-logos">
         <div class="trusted-logo logo-rimrock"><img src="images/RimRockLogo-trim.png" alt="Rimrock Construction" loading="lazy"></div>
         <div class="trusted-logo logo-jacobsen"><img src="images/JacobsenLogo.png" alt="Jacobsen" loading="lazy"></div>
+        <div class="trusted-logo logo-headwaters"><img src="images/HeadwatersLogo.jpg" alt="Headwaters Construction" loading="lazy"></div>
         <div class="trusted-logo logo-lotus"><img src="images/LotusLogo-trim.png" alt="Lotus" loading="lazy"></div>
       </div>
     </div>
@@ -238,12 +238,6 @@
             <i class="fas fa-paint-roller"></i>
           </div>
           <h3>Mudding &amp; Taping</h3>
-        </div>
-        <div class="service-card">
-          <div class="hexagon">
-            <i class="fas fa-screwdriver-wrench"></i>
-          </div>
-          <h3>Repairs &amp; Patching</h3>
         </div>
         <div class="service-card">
           <div class="hexagon">
@@ -440,7 +434,7 @@
           <div class="contact-details">
             <div class="contact-item">
               <i class="fas fa-phone"></i>
-              <a href="tel:+18015550100">(801) 555-0100</a>
+              <a href="tel:+15044739500">(504) 473-9500</a>
             </div>
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
@@ -474,18 +468,18 @@
             </div>
             <div class="form-group">
               <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="(801) 555-0000">
+              <input type="tel" id="phone" name="phone" placeholder="(504) 555-0000">
             </div>
           </div>
           <div class="form-group">
-            <span class="field-label">Services Needed <span class="label-hint">(select all that apply)</span></span>
+            <span class="field-label">Services Needed <span class="label-hint">(select any that apply)</span></span>
             <div class="checkbox-grid">
+              <label class="checkbox-item"><input type="checkbox" id="serviceAll" value="all"> <span>Full Scope / Select All</span></label>
               <label class="checkbox-item"><input type="checkbox" name="service[]" value="hanging"> <span>Drywall Hanging</span></label>
               <label class="checkbox-item"><input type="checkbox" name="service[]" value="mudding"> <span>Mudding &amp; Taping</span></label>
-              <label class="checkbox-item"><input type="checkbox" name="service[]" value="repairs"> <span>Repairs &amp; Patching</span></label>
               <label class="checkbox-item"><input type="checkbox" name="service[]" value="acoustic"> <span>Acoustic Ceilings</span></label>
               <label class="checkbox-item"><input type="checkbox" name="service[]" value="framing"> <span>Steel Framing</span></label>
-              <label class="checkbox-item"><input type="checkbox" name="service[]" value="other"> <span>Other / Full Scope</span></label>
+              <label class="checkbox-item"><input type="checkbox" name="service[]" value="other"> <span>Other</span></label>
             </div>
           </div>
           <div class="form-group">
@@ -516,11 +510,11 @@
         </details>
         <details class="faq-item">
           <summary>Does Summit Drywall handle residential or commercial projects?</summary>
-          <div class="faq-answer"><p>We focus on mid- and large-scale commercial projects, working as a subcontractor for general contractors on everything from ground-up construction to tenant improvements.</p></div>
+          <div class="faq-answer"><p>We focus on mid-scale commercial projects, working as a subcontractor for general contractors on everything from ground-up construction to tenant improvements.</p></div>
         </details>
         <details class="faq-item">
           <summary>What drywall services does Summit Drywall offer?</summary>
-          <div class="faq-answer"><p>We provide drywall hanging, mudding and taping, repairs and patching, acoustic ceilings, and light-gauge steel framing.</p></div>
+          <div class="faq-answer"><p>We provide drywall hanging, mudding and taping, acoustic ceilings, and light-gauge steel framing.</p></div>
         </details>
         <details class="faq-item">
           <summary>Do you provide Level 5 finishes?</summary>
@@ -540,8 +534,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#home" class="nav-logo">
-            <span class="logo-text">SUMMIT</span>
-            <span class="logo-sub">DRYWALL</span>
+            <span class="footer-brand-name">Summit Drywall, Inc</span>
           </a>
           <p>Licensed &amp; insured commercial drywall subcontractor serving Weber, Davis, Salt Lake, and Utah counties in Utah.</p>
         </div>
@@ -561,14 +554,13 @@
           <ul>
             <li>Drywall Hanging</li>
             <li>Mudding &amp; Taping</li>
-            <li>Repairs &amp; Patching</li>
             <li>Acoustic Ceilings</li>
             <li>Steel Framing</li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
-          <p><a href="tel:+18015550100">(801) 555-0100</a></p>
+          <p><a href="tel:+15044739500">(504) 473-9500</a></p>
           <p><a href="mailto:info@summitdrywall.com">info@summitdrywall.com</a></p>
           <p>Salt Lake City, UT 84101</p>
           <div class="footer-badge">
@@ -577,11 +569,17 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Summit Drywall. All rights reserved.</p>
+        <p>&copy; 2026 Summit Drywall, Inc. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js?v=3"></script>
+  <!-- Lightbox for gallery images -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">&times;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="js/main.js?v=5"></script>
 </body>
 </html>
